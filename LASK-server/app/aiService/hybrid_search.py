@@ -10,11 +10,11 @@ from app.models.chunk_model import load_text_chunks_store, get_related_chunks
 from groq import Groq
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyBWVp999sJ--3LAykvVbFHZwr3lVBzw13k")
+genai.configure(api_key="")
 
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-groq_api_key = "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"
+
 
 # Load FAISS index from saved file
 def load_faiss_index(directory):
